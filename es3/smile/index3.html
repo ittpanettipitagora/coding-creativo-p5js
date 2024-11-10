@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script src="p5.min.js"></script>
+    <script>
+        function setup() {
+            createCanvas(600, 600);
+
+            background(192,192,192);
+        }
+
+        function draw(){
+            let x = map(mouseX, 0, 600, 210, 222);
+            let x1 = map(mouseX, 0, 600, 350, 362);
+            fill(255,255,0)
+            circle(300, 300, 400)
+            fill(255,255,255)
+            circle(230, 220, 100)
+            circle(370, 220, 100)
+            fill(0,0,0)
+            circle(x, 240, 40)
+            circle(x1, 240, 40)
+            fill(255,255,0)
+            arc(300, 340, 200, x, 0, PI);
+
+        }
+    </script>
+</body>
+
+</html>
