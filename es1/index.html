@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <!-- 
+    Esperienza 1: 
+	Obiettivi: 
+	- Essere in grado di creare delle variabili
+	- Capire la struttura di uno sketch
+	- Comprendere e applicare i concetti relativi al sistema di riferimento di p5.js
+	- Come disegnare forme di base in un canvas di p5.js
+	- Come colorare secondo RGB sfondi e forme
+
+	Materiali
+	- sketch di base già pronto (file HTML con libreria già inclusa e script con setup e draw)
+	- nella funzione draw inserire alcune forme di base: 	
+		- rettangolo  
+		- cerchio
+	- colorare queste forme
+
+	Contenuti
+	- Creazione di un canvas (funzione già pronta, al massimo faremo loro cambiare le dimensioni del canvas)
+	- Disegno di una o più forme di base
+		- rect
+		- circle
+	- Gestione dei colori
+		- Nozioni base su RGB
+		- background
+		- fill
+		- stroke
+     -->
+
+    <script src="p5.min.js"></script>
+
+    <script>
+        // Creazione delle variabili
+        // per creare una variabile serve la parola chiave -> let
+        // Dopo dobbiamo iniziallizzarla utilizzando -> "=" 
+        let variabile = 0
+
+        function setup() {
+            createCanvas(500,500)
+        }
+        function draw(){
+            background(255,0,0);
+        
+            
+            
+            //Traccia n1: crea un rettangolo che sia grande la metà del canvas
+            rect(0,0,150,100) //questa funzione crea un rettangolo. Le prime due cifre indicano la posizione del rettangolo dal suo angolo superiore sinistro. Le ultime due cifre
+            //sono rispettivamente la larghezza e l'altezza
+            // traccia n2: cambia il colore del rettangolo 
+            fill(0,0,0) //la funzione fill fa cambiare colore con rgb
+            //traccia n3: cambia il colore del bordo
+            stroke(0,0,0) //la funzione stroke cambia il colore del bordo con rgb
+            strokeweight(4) //la funzione strokeweight 
+            //traccia n4: crea un cerchio nell'altra metà del canvas
+            noFill()
+            circle(250,250,100)
+            fill(0,250,0)
+            
+
+        }
+
+
+
+        
+
+    </script>
+</body>
+</html>
